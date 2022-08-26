@@ -35,8 +35,8 @@
   
     
         ,"post3": {
-            "title": "Title",
-            "content": "A notebook for future usage .",
+            "title": "Notebook",
+            "content": "",
             "url": "https://sand353.github.io/Blog/2022/08/25/Notebook.html",
             "relUrl": "/2022/08/25/Notebook.html",
             "date": " • Aug 25, 2022"
@@ -46,8 +46,8 @@
   
     
         ,"post4": {
-            "title": "Title",
-            "content": ". title: Quiz description: Quiz program in python . layout: post . Quiz . The following is a quiz program I wrote in python. . questionbank = [&quot;What command is used to include other functions that were previously developed?&quot;,&quot;What command is used to evaluate correct or incorrect response in this example?&quot;,&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;,&quot;What is the basic python output command that prints text to the terminal?&quot;, &quot;What keyword is used in python to define a function?&quot;,&quot;What is the python function that converts variables into strings?&quot;] answerbank = [&quot;import&quot;,&quot;if&quot;,&quot;expression&quot;,&quot;print&quot;,&quot;def&quot;,&quot;str()&quot;] correct = 0 #Starting number of correct questions #Iterating through the questions, prompting the user for answers and providing feedback for i in range(len(questionbank)): rsp=input(questionbank[i] + &quot; &quot;) if rsp == answerbank[i]: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(&quot;You scored &quot; + str(correct) + &quot; out of &quot; + str(len(questionbank)) + &quot; or &quot; + str(correct/len(questionbank)*100) + &quot;%&quot;) #Results . import is correct! if is correct! expression is correct! print is correct! def is correct! str() is correct! You scored 6 out of 6 or 100.0% .",
+            "title": "Quiz",
+            "content": "questionbank = [&quot;What command is used to include other functions that were previously developed?&quot;,&quot;What command is used to evaluate correct or incorrect response in this example?&quot;,&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;,&quot;What is the basic python output command that prints text to the terminal?&quot;, &quot;What keyword is used in python to define a function?&quot;,&quot;What is the python function that converts variables into strings?&quot;] answerbank = [&quot;import&quot;,&quot;if&quot;,&quot;expression&quot;,&quot;print&quot;,&quot;def&quot;,&quot;str()&quot;] correct = 0 #Starting number of correct questions #Iterating through the questions, prompting the user for answers and providing feedback for i in range(len(questionbank)): rsp=input(questionbank[i] + &quot; &quot;) if rsp == answerbank[i]: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(&quot;You scored &quot; + str(correct) + &quot; out of &quot; + str(len(questionbank)) + &quot; or &quot; + str(correct/len(questionbank)*100) + &quot;%&quot;) #Results . import is correct! if is correct! expression is correct! print is correct! def is correct! str() is correct! You scored 6 out of 6 or 100.0% .",
             "url": "https://sand353.github.io/Blog/2022/08/24/quiz.html",
             "relUrl": "/2022/08/24/quiz.html",
             "date": " • Aug 24, 2022"
