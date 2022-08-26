@@ -65,7 +65,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/Blog/about/">About Me</a><a class="page-link" href="/Blog/search/">Search</a><a class="page-link" href="/Blog/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/Blog/about/">About Me</a><a class="page-link" href="/Blog/_pages/notes.html">Notes</a><a class="page-link" href="/Blog/search/">Search</a><a class="page-link" href="/Blog/categories/">Tags</a><a class="page-link" href="/Blog/_pages/vocab.html">Vocab</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -130,7 +130,7 @@ window.onload = wrap_img;
 <hr />
 <p>title: Quiz
 description: Quiz program in python</p>
-<h2 id="layout:-post">layout: post<a class="anchor-link" href="#layout:-post"> </a></h2><p>The following is a quiz program I wrote in python.</p>
+<h2 id="layout:-post">layout: post<a class="anchor-link" href="#layout:-post"> </a></h2><h1 id="Quiz">Quiz<a class="anchor-link" href="#Quiz"> </a></h1><p>The following is a quiz program I wrote in python.</p>
 
 </div>
 </div>
@@ -142,15 +142,13 @@ description: Quiz program in python</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questionbank</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">,</span><span class="s2">&quot;What command is used to evaluate correct or incorrect response in this example?&quot;</span><span class="p">,</span><span class="s2">&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;</span><span class="p">]</span>
-<span class="n">answerbank</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;import&quot;</span><span class="p">,</span><span class="s2">&quot;if&quot;</span><span class="p">,</span><span class="s2">&quot;expression&quot;</span><span class="p">]</span>
-
-<span class="n">qs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">questionbank</span><span class="p">)</span> <span class="c1">#Total Number of questions</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questionbank</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">,</span><span class="s2">&quot;What command is used to evaluate correct or incorrect response in this example?&quot;</span><span class="p">,</span><span class="s2">&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;</span><span class="p">,</span><span class="s2">&quot;What is the basic python output command that prints text to the terminal?&quot;</span><span class="p">,</span> <span class="s2">&quot;What keyword is used in python to define a function?&quot;</span><span class="p">,</span><span class="s2">&quot;What is the python function that converts variables into strings?&quot;</span><span class="p">]</span>
+<span class="n">answerbank</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;import&quot;</span><span class="p">,</span><span class="s2">&quot;if&quot;</span><span class="p">,</span><span class="s2">&quot;expression&quot;</span><span class="p">,</span><span class="s2">&quot;print&quot;</span><span class="p">,</span><span class="s2">&quot;def&quot;</span><span class="p">,</span><span class="s2">&quot;str()&quot;</span><span class="p">]</span>
 
 <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#Starting number of correct questions</span>
 
 <span class="c1">#Iterating through the questions, prompting the user for answers and providing feedback</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">qs</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">questionbank</span><span class="p">)):</span>
     <span class="n">rsp</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="n">questionbank</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="n">answerbank</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
@@ -158,7 +156,7 @@ description: Quiz program in python</p>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; out of &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qs</span><span class="p">))</span> <span class="c1">#Results</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; out of &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">questionbank</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; or &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">questionbank</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span> <span class="c1">#Results</span>
 </pre></div>
 
     </div>
@@ -174,7 +172,10 @@ description: Quiz program in python</p>
 <pre>import is correct!
 if is correct!
 expression is correct!
-You scored 3 out of 3
+print is correct!
+def is correct!
+str() is correct!
+You scored 6 out of 6 or 100.0%
 </pre>
 </div>
 </div>

@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://sand353.github.io/Blog/2022/08/23/usingbash.html" />
-<meta property="og:url" content="https://sand353.github.io/Blog/2022/08/23/usingbash.html" />
+<link rel="canonical" href="https://sand353.github.io/Blog/2022/08/25/usingbash.html" />
+<meta property="og:url" content="https://sand353.github.io/Blog/2022/08/25/usingbash.html" />
 <meta property="og:site_name" content="fastpages-SAnd353" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-23T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-08-25T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="First Bash Notebook" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-23T00:00:00-05:00","datePublished":"2022-08-23T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"First Bash Notebook","mainEntityOfPage":{"@type":"WebPage","@id":"https://sand353.github.io/Blog/2022/08/23/usingbash.html"},"url":"https://sand353.github.io/Blog/2022/08/23/usingbash.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-25T00:00:00-05:00","datePublished":"2022-08-25T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"First Bash Notebook","mainEntityOfPage":{"@type":"WebPage","@id":"https://sand353.github.io/Blog/2022/08/25/usingbash.html"},"url":"https://sand353.github.io/Blog/2022/08/25/usingbash.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sand353.github.io/Blog/feed.xml" title="fastpages-SAnd353" /><link rel="shortcut icon" type="image/x-icon" href="/Blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -65,7 +65,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/Blog/about/">About Me</a><a class="page-link" href="/Blog/search/">Search</a><a class="page-link" href="/Blog/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/Blog/about/">About Me</a><a class="page-link" href="/Blog/_pages/notes.html">Notes</a><a class="page-link" href="/Blog/search/">Search</a><a class="page-link" href="/Blog/categories/">Tags</a><a class="page-link" href="/Blog/_pages/vocab.html">Vocab</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -73,8 +73,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">First Bash Notebook</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-23T00:00:00-05:00" itemprop="datePublished">
-        Aug 23, 2022
+    <h1 class="post-title p-name" itemprop="name headline">First Bash Notebook</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-25T00:00:00-05:00" itemprop="datePublished">
+        Aug 25, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -154,61 +154,6 @@ window.onload = wrap_img;
     <span class="nb">cd</span> ~
 <span class="k">fi</span>
 <span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project</span><span class="s2"> exists.&quot;</span>
-
-<span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
-<span class="nb">cd</span> <span class="nv">$project</span>
-<span class="nb">pwd</span>
-
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list top level or root of files with project pulled from github&quot;</span>
-ls
-
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list again with hidden files pulled from github&quot;</span>
-ls -a
-
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list all files in long format&quot;</span>
-ls -al
-<span class="nb">echo</span> <span class="s2">&quot;Look for posts&quot;</span>
-<span class="nb">export</span> <span class="nv">posts</span><span class="o">=</span><span class="nv">$project</span>/_posts
-<span class="nb">cd</span> <span class="nv">$posts</span>
-<span class="nb">pwd</span>
-ls -l
-<span class="nb">echo</span> <span class="s2">&quot;Look for notebooks&quot;</span>
-<span class="nb">export</span> <span class="nv">notebooks</span><span class="o">=</span><span class="nv">$project</span>/_notebooks
-<span class="nb">cd</span> <span class="nv">$notebooks</span>
-<span class="nb">pwd</span>
-ls -l
-<span class="nb">echo</span> <span class="s2">&quot;Look for images in notebooks, print working directory, list files&quot;</span>
-<span class="nb">cd</span> <span class="nv">$notebooks</span>/images
-<span class="nb">pwd</span>
-ls -l
-
-<span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
-
-<span class="nb">cd</span> <span class="nv">$project</span>
-<span class="nb">echo</span> <span class="s2">&quot;show the contents of README.md&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-
-cat README.md  <span class="c1"># show contents of file, in this case markdown</span>
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
-
-<span class="nb">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal value on right&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-
-env
-<span class="nb">cd</span> <span class="nv">$project</span>
-
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;show the secrets of .git&quot;</span>
-<span class="nb">cd</span> .git
-ls -l
-
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;look at config file&quot;</span>
-cat config
 </pre></div>
 
     </div>
@@ -224,7 +169,51 @@ cat config
 <pre>Using conditional statement to create a project directory and project
 Directory /home/steven/vscode exists.
 Directory /home/steven/vscode/APCSP exists.
-Navigate to project, then navigate to area wwhere files were cloned
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
+<span class="nb">cd</span> <span class="nv">$project</span>
+<span class="nb">pwd</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;list top level or root of files with project pulled from github&quot;</span>
+ls
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;list again with hidden files pulled from github&quot;</span>
+ls -a
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;list all files in long format&quot;</span>
+ls -al
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Navigate to project, then navigate to area wwhere files were cloned
 /home/steven/vscode/APCSP
 
 list top level or root of files with project pulled from github
@@ -246,11 +235,11 @@ total 120
 drwxr-xr-x 18 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">.</span>
 drwxr-xr-x  4 steven steven  4096 Aug 20 23:01 <span class="ansi-blue-intense-fg ansi-bold">..</span>
 -rw-r--r--  1 steven steven   420 Aug 19 14:07 .devcontainer.json
-drwxr-xr-x  8 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">.git</span>
+drwxr-xr-x  8 steven steven  4096 Aug 25 13:14 <span class="ansi-blue-intense-fg ansi-bold">.git</span>
 -rw-r--r--  1 steven steven    84 Aug 19 14:07 .gitattributes
 drwxr-xr-x  4 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">.github</span>
 -rw-r--r--  1 steven steven   917 Aug 19 14:07 .gitignore
-drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">.vscode</span>
+drwxr-xr-x  2 steven steven  4096 Aug 25 13:14 <span class="ansi-blue-intense-fg ansi-bold">.vscode</span>
 -rwxr-xr-x  1 steven steven  1304 Aug 19 14:07 <span class="ansi-green-intense-fg ansi-bold">Gemfile</span>
 -rw-r--r--  1 steven steven 11351 Aug 19 14:07 LICENSE
 -rwxr-xr-x  1 steven steven  1422 Aug 19 14:07 <span class="ansi-green-intense-fg ansi-bold">Makefile</span>
@@ -260,18 +249,52 @@ drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg
 drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_fastpages_docs</span>
 drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_includes</span>
 drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_layouts</span>
-drwxr-xr-x  3 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_notebooks</span>
-drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_pages</span>
+drwxr-xr-x  4 steven steven  4096 Aug 25 13:14 <span class="ansi-blue-intense-fg ansi-bold">_notebooks</span>
+drwxr-xr-x  2 steven steven  4096 Aug 25 13:14 <span class="ansi-blue-intense-fg ansi-bold">_pages</span>
 drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_plugins</span>
-drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_posts</span>
+drwxr-xr-x  2 steven steven  4096 Aug 25 13:14 <span class="ansi-blue-intense-fg ansi-bold">_posts</span>
 drwxr-xr-x  3 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_sass</span>
 drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">_word</span>
 drwxr-xr-x  4 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">assets</span>
 -rwxr-xr-x  1 steven steven  1136 Aug 19 14:07 <span class="ansi-green-intense-fg ansi-bold">docker-compose.yml</span>
-drwxr-xr-x  5 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">images</span>
+drwxr-xr-x  5 steven steven  4096 Aug 25 13:14 <span class="ansi-blue-intense-fg ansi-bold">images</span>
 -rw-r--r--  1 steven steven  1061 Aug 19 14:07 index.html
 drwxr-xr-x  2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">python</span>
-Look for posts
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for posts&quot;</span>
+<span class="nb">export</span> <span class="nv">posts</span><span class="o">=</span><span class="nv">$project</span>/_posts
+<span class="nb">cd</span> <span class="nv">$posts</span>
+<span class="nb">pwd</span>
+ls -l
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Look for posts
 /home/steven/vscode/APCSP/_posts
 total 228
 -rw-r--r-- 1 steven steven 21306 Aug 19 14:07 2022-06-01-TT160-deploy.md
@@ -290,9 +313,9 @@ total 228
 -rw-r--r-- 1 steven steven  7968 Aug 19 14:07 2022-08-15-TR100-tool_setup.md
 -rw-r--r-- 1 steven steven 15026 Aug 19 14:07 2022-08-15-TT100-tools.md
 -rw-r--r-- 1 steven steven  5590 Aug 19 14:07 2022-08-15-TT101-vscode-wsl.md
--rw-r--r-- 1 steven steven  2066 Aug 19 14:07 2022-08-22-TR110-intro_python.md
+-rw-r--r-- 1 steven steven  2155 Aug 25 13:14 2022-08-22-TR110-intro_python.md
 -rw-r--r-- 1 steven steven  5173 Aug 19 14:07 2022-08-22-TT110-fastpages.md
--rw-r--r-- 1 steven steven  2635 Aug 19 14:07 2022-08-22-TT110-focus.md
+-rw-r--r-- 1 steven steven  2798 Aug 25 13:14 2022-08-22-TT110-focus.md
 -rw-r--r-- 1 steven steven  2737 Aug 19 14:07 2022-08-29-TR120-data_abstract.md
 -rw-r--r-- 1 steven steven 10683 Aug 19 14:07 2022-08-29-TT120-agile.md
 -rw-r--r-- 1 steven steven  4498 Aug 19 14:07 2022-08-29-TT120-html_fragments.md
@@ -301,22 +324,129 @@ total 228
 -rw-r--r-- 1 steven steven  8066 Aug 19 14:07 2022-09-05-TR130-creative_development.md
 -rw-r--r-- 1 steven steven  3520 Aug 19 14:07 2022-09-05-TT130-applab.md
 -rw-r--r-- 1 steven steven   720 Aug 19 14:07 README.md
-Look for notebooks
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for notebooks&quot;</span>
+<span class="nb">export</span> <span class="nv">notebooks</span><span class="o">=</span><span class="nv">$project</span>/_notebooks
+<span class="nb">cd</span> <span class="nv">$notebooks</span>
+<span class="nb">pwd</span>
+ls -l
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Look for notebooks
 /home/steven/vscode/APCSP/_notebooks
-total 84
+total 144
 -rw-r--r-- 1 steven steven 14243 Aug 19 14:07 2022-06-01-TT150-webapi_tutorial.ipynb
--rw-r--r-- 1 steven steven  6520 Aug 19 14:07 2022-06-01-TT160-bash_tutorial.ipynb
 -rw-r--r-- 1 steven steven  8653 Aug 19 14:07 2022-07-21-PBL-neo4j_intro.ipynb
--rw-r--r-- 1 steven steven 11749 Aug 19 14:07 2022-08-22-TP110-python_hello.ipynb
+-rw-r--r-- 1 steven steven 11694 Aug 25 13:14 2022-08-22-TP110-python_hello.ipynb
+-rw-r--r-- 1 steven steven 20003 Aug 25 13:14 2022-08-22-TT110-anthony_and_sahil.ipynb
+-rw-r--r-- 1 steven steven  9525 Aug 25 13:14 2022-08-22-TT110-bash_tutorial.ipynb
+-rw-r--r-- 1 steven steven 35721 Aug 25 13:14 2022-08-25-tool_check.ipynb
 -rw-r--r-- 1 steven steven 10141 Aug 19 14:07 2022-08-29-TP120-python_lists.ipynb
 -rw-r--r-- 1 steven steven 12632 Aug 19 14:07 2022-09-05-TT130-js_tutorial.ipynb
 -rw-r--r-- 1 steven steven   771 Aug 19 14:07 README.md
-drwxr-xr-x 2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">images</span>
-Look for images in notebooks, print working directory, list files
+drwxr-xr-x 2 steven steven  4096 Aug 25 13:14 <span class="ansi-blue-intense-fg ansi-bold">images</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for images in notebooks, print working directory, list files&quot;</span>
+<span class="nb">cd</span> <span class="nv">$notebooks</span>/images
+<span class="nb">pwd</span>
+ls -l
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Look for images in notebooks, print working directory, list files
 /home/steven/vscode/APCSP/_notebooks/images
-total 80
--rw-r--r-- 1 steven steven 79231 Aug 19 14:07 <span class="ansi-magenta-intense-fg ansi-bold">kernels.png</span>
-Navigate to project, then navigate to area wwhere files were cloned
+total 100
+-rw-r--r-- 1 steven steven 101617 Aug 25 13:14 <span class="ansi-magenta-intense-fg ansi-bold">kernels.png</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
+
+<span class="nb">cd</span> <span class="nv">$project</span>
+<span class="nb">echo</span> <span class="s2">&quot;show the contents of README.md&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+cat README.md  <span class="c1"># show contents of file, in this case markdown</span>
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Navigate to project, then navigate to area wwhere files were cloned
 show the contents of README.md
 
 [//]: # (This template replaces README.md when someone creates a new repo with the fastpages template.)
@@ -350,17 +480,51 @@ Note: you may want to remove example blog posts from the `_posts`,  `_notebooks`
 Please use the [nbdev &amp; blogging channel](https://forums.fast.ai/c/fastai-users/nbdev/48) in the fastai forums for any questions or feature requests.
 
 end of README.md
-Show the shell environment variables, key on left of equal value on right
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal value on right&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+env
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Show the shell environment variables, key on left of equal value on right
 
 SHELL=/bin/bash
 PYTHONUNBUFFERED=1
 project=/home/steven/vscode/APCSP
 CONDA_EXE=/home/steven/anaconda3/bin/conda
 _CE_M=
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=1
 WSL_DISTRO_NAME=Ubuntu
 ELECTRON_RUN_AS_NODE=1
 VSCODE_AMD_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
-NAME=Code
+NAME=LAPTOP-9MLCK5N6
 PWD=/home/steven/vscode/APCSP
 LOGNAME=steven
 CONDA_PREFIX=/home/steven/anaconda3
@@ -368,7 +532,7 @@ MOTD_SHOWN=update-motd
 project_dir=/home/steven/vscode
 HOME=/home/steven
 LANG=C.UTF-8
-WSL_INTEROP=/run/WSL/8_interop
+WSL_INTEROP=/run/WSL/11_interop
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 CONDA_PROMPT_MODIFIER=(base) 
 PYDEVD_USE_FRAME_EVAL=NO
@@ -382,32 +546,73 @@ USER=steven
 PYTHONIOENCODING=utf-8
 notebooks=/home/steven/vscode/APCSP/_notebooks
 CONDA_SHLVL=1
-SHLVL=2
+SHLVL=1
 PAGER=cat
 project_repo=https://github.com/nighthawkcoders/APCSP.git
 VSCODE_CWD=/mnt/c/Users/Steven/AppData/Local/Programs/Microsoft VS Code
 CONDA_PYTHON_EXE=/home/steven/anaconda3/bin/python
 PS1=[PEXP\[\]ECT_PROMPT&gt;
 CONDA_DEFAULT_ENV=base
-WSLENV=ELECTRON_RUN_AS_NODE/w:
+WSLENV=VSCODE_WSL_EXT_LOCATION/up
 VSCODE_WSL_EXT_LOCATION=/mnt/c/Users/Steven/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
 XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
-PATH=/home/steven/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/home/steven/anaconda3/bin:/home/steven/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/National Instruments/Shared/OpenVINO:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Steven/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Steven/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH=/home/steven/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/home/steven/.local/bin:/home/steven/anaconda3/bin:/home/steven/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/National Instruments/Shared/OpenVINO:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Steven/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Steven/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 VSCODE_NLS_CONFIG={&#34;locale&#34;:&#34;en&#34;,&#34;availableLanguages&#34;:{}}
 HOSTTYPE=x86_64
 VSCODE_HANDLES_UNCAUGHT_ERRORS=true
 OLDPWD=/home/steven/vscode/APCSP/_notebooks/images
-VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-e122caf1-770c-4258-a41f-e57782cb6a14.sock
+VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-568ca3af-ca0c-40d5-85fc-2912188553c4.sock
 _=/usr/bin/env
+</pre>
+</div>
+</div>
 
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> <span class="nv">$project</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;show the secrets of .git&quot;</span>
+<span class="nb">cd</span> .git
+ls -l
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;look at config file&quot;</span>
+cat config
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
 show the secrets of .git
-total 60
+total 68
+-rw-r--r-- 1 steven steven   353 Aug 25 13:24 FETCH_HEAD
 -rw-r--r-- 1 steven steven    23 Aug 19 14:07 HEAD
+-rw-r--r-- 1 steven steven    41 Aug 25 13:14 ORIG_HEAD
 drwxr-xr-x 2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">branches</span>
 -rw-r--r-- 1 steven steven   269 Aug 19 14:07 config
 -rw-r--r-- 1 steven steven    73 Aug 19 14:07 description
 drwxr-xr-x 2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">hooks</span>
--rw-r--r-- 1 steven steven 19716 Aug 19 14:07 index
+-rw-r--r-- 1 steven steven 20021 Aug 25 13:14 index
 drwxr-xr-x 2 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">info</span>
 drwxr-xr-x 3 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">logs</span>
 drwxr-xr-x 4 steven steven  4096 Aug 19 14:07 <span class="ansi-blue-intense-fg ansi-bold">objects</span>
@@ -440,7 +645,7 @@ look at config file
 
 
 
-  </div><a class="u-url" href="/Blog/2022/08/23/usingbash.html" hidden></a>
+  </div><a class="u-url" href="/Blog/2022/08/25/usingbash.html" hidden></a>
 </article>
 
       </div>
