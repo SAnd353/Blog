@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages-SAnd353
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+title: SAnd353's Fastpages Blog
+description: Sand353's Blog - built using Fastpages
 github_username: SAnd353
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "Blog"
@@ -37,10 +37,10 @@ url: "https://SAnd353.github.io" # the base hostname & protocol for your site, e
 baseurl: "/Blog" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-minima:
-  social_links:
-    twitter: fastdotai
-    github: fastai
+# minima:
+#   social_links:
+#     twitter: fastdotai
+#     github: fastai
 
 # Set this to true to get LaTeX math equation support
 use_math: 
