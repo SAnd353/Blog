@@ -158,10 +158,7 @@
   
 
   
-  
-
-  
-      ,"page13": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://sand353.github.io/Blog/robots.txt",
