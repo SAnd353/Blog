@@ -1,3 +1,9 @@
+---
+title: "App Lab Blog"
+description: "Blogging about App Lab"
+layout: post
+---
+
 # App Lab Blog
 
 My quiz is a 3 question biology quiz where each question has two choices.
