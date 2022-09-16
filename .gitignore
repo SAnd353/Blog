@@ -12,3 +12,12 @@ _notebooks/.ipynb_checkpoints
 .netlify
 .tweet-cache
 __pycache__
+settings.ini
+Gemfile.lock
+images/copied_from_nb/
+_posts/2022-08-24-quiz.md
+_posts/2022-08-25-firstnotebook.md
+_posts/2022-08-25-usingbash.md
+_posts/2022-08-28-Document.md
+_posts/2022-08-28-Notebook.md
+_posts/2022-09-02-infodb.md
