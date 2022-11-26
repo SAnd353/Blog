@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://sand353.github.io/Blog/frontend/binary</loc>
+<lastmod>2022-07-07T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://sand353.github.io/Blog/2022/08/21/using-markdown.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
@@ -11,10 +15,6 @@
 <url>
 <loc>https://sand353.github.io/Blog/2022/08/26/Image.html</loc>
 <lastmod>2022-08-26T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://sand353.github.io/Blog/2022/08/28/Document.html</loc>
-<lastmod>2022-08-28T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://sand353.github.io/Blog/2022/09/02/infodb.html</loc>
@@ -57,20 +57,24 @@
 <lastmod>2022-11-08T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://sand353.github.io/Blog/2022/11/17/Notebook.html</loc>
-<lastmod>2022-11-17T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://sand353.github.io/Blog/2022/11/17/data-abstraction-lists.html</loc>
 <lastmod>2022-11-17T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://sand353.github.io/Blog/2022/11/17/firstnotebook.html</loc>
-<lastmod>2022-11-17T00:00:00-06:00</lastmod>
+<loc>https://sand353.github.io/Blog/2022/11/23/lessonrubric.html</loc>
+<lastmod>2022-11-23T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://sand353.github.io/Blog/2022/11/17/usingbash.html</loc>
-<lastmod>2022-11-17T00:00:00-06:00</lastmod>
+<loc>https://sand353.github.io/Blog/2022/11/25/Notebook.html</loc>
+<lastmod>2022-11-25T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://sand353.github.io/Blog/2022/11/25/firstnotebook.html</loc>
+<lastmod>2022-11-25T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://sand353.github.io/Blog/2022/11/25/usingbash.html</loc>
+<lastmod>2022-11-25T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://sand353.github.io/Blog/about/</loc>
@@ -98,6 +102,6 @@
 </url>
 <url>
 <loc>https://sand353.github.io/Blog/_pages/table.html</loc>
-<lastmod>2022-11-18T15:18:07-06:00</lastmod>
+<lastmod>2022-11-26T14:27:24-06:00</lastmod>
 </url>
 </urlset>
