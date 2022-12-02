@@ -17,3 +17,11 @@ Strings
 - substrings are parts of existing strings
 - concatenation joins strings
 - len, concat, substring
+
+# 3.5-3.7
+Boolean - true or false
+relational operators
+Logical operators - NOT, AND, OR
+Conditionals
+selection, algorithm, conditional statement (if statement)
+nested conditionals (conditionals within conditionals)
