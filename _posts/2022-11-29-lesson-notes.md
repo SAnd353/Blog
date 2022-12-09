@@ -2,7 +2,7 @@
 title: "Lesson Notes"
 description: "Notes from the lessons"
 layout: post
-categories: [Notes]
+categories: [Lesson_Notes]
 ---
 
 # 3.3-3.4
