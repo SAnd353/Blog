@@ -132,40 +132,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bits</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Input a sequence of bits to invert: &quot;</span><span class="p">)</span>
-
-<span class="n">splitbits</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">bits</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">splitbits</span><span class="p">)):</span>
-    <span class="k">if</span> <span class="n">splitbits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span>
-        <span class="n">splitbits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
-    <span class="k">elif</span> <span class="n">splitbits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span>
-        <span class="n">splitbits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">splitbits</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In the code above, the logic itself works with a list, but the code abstracts it into a sequence of bits in a string (as seen in the input and output). To make this work, the splitbits lists is created and processed. At the end of the code, the result is outputted as a string rather than a list (abstraction).</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><p>The following code is incomplete. It's intended purpose is to increase three numbers, all of which ask for user input, by an amount specified the user. The input code is abstracted, but the actual logic isn't connected to the abstraction.</p>
@@ -198,6 +164,32 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">IndexError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb Cell 5</span> in <span class="ansi-cyan-fg">&lt;cell line: 12&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> # Add code in the space below
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span> 
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> 
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> 
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span> # The following is the code that adds the inputted addend to the other numbers. It is hidden from the user.
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span> for i in numlist:
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=12&#39;&gt;13&lt;/a&gt;</span>     numlist[i -1] += int(add)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2022-11-17-data-abstraction-lists.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=14&#39;&gt;15&lt;/a&gt;</span> print(numlist)
+
+<span class="ansi-red-fg">IndexError</span>: list index out of range</pre>
+</div>
+</div>
+
 </div>
 </div>
 
