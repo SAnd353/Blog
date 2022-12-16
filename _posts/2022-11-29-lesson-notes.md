@@ -10,6 +10,8 @@ Algorithms
 - sequence - specyfying an order for an algorithm
 - selection - chooing between outcomes based off a decision
 - iteration - repetition on a condition
+- flowchart - a representation of an algorith with shapes and arrows
+- pseudocode - a blend of code and normal language
 
 Arithmetic Operations
 - subtraction, addition, multiplication, division, modulo (remainder)
@@ -24,5 +26,5 @@ Boolean - true or false
 relational operators
 Logical operators - NOT, AND, OR
 Conditionals
-selection, algorithm, conditional statement (if statement)
+selection (code executing on a condition), algorithm (a set of instructions that accomplish a specific task), conditional statement (if statement)
 nested conditionals (conditionals within conditionals)
