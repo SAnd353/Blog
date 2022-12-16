@@ -1,5 +1,5 @@
 ---
-title: "Lesson Notes"
+title: "Collegeboard Lessons 3.3-3.4 and 3.5-3.7 Notes"
 description: "Notes from the lessons"
 layout: post
 categories: [Lesson_Notes]
