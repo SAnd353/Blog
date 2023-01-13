@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -391,6 +391,7 @@ Test 4, make a dictionary
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+<span class="kn">import</span> <span class="nn">json</span>
 
 <span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">dob</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">classOf</span><span class="p">):</span>
@@ -417,7 +418,8 @@ Test 4, make a dictionary
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span>
+        <span class="n">dob_string</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%m-</span><span class="si">%d</span><span class="s1">-%Y'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">dob_string</span>
 
     <span class="nd">@dob</span><span class="o">.</span><span class="n">setter</span>
     <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dob</span><span class="p">):</span>
@@ -427,18 +429,35 @@ Test 4, make a dictionary
     <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="p">((</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">day</span><span class="p">))</span>
 
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dictionary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"name"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">"dob"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">dob</span><span class="p">,</span>
+            <span class="s2">"age"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span>
+            <span class="s2">"classOf"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">classOf</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nb">dict</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'User(name=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="si">}</span><span class="s1">, dob=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="si">}</span><span class="s1">, age=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_age</span><span class="si">}</span><span class="s1">,dob=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_classOf</span><span class="si">}</span><span class="s1">)'</span>
+
 <span class="k">def</span> <span class="nf">test_user</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">dob</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">classOf</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">change_dob</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">dob</span><span class="p">):</span>
-    <span class="n">u1</span><span class="o">.</span><span class="n">dob</span> <span class="o">=</span> <span class="n">dob</span>
-    <span class="k">return</span> <span class="n">u1</span><span class="o">.</span><span class="n">dob</span>
+    <span class="n">user</span><span class="o">.</span><span class="n">dob</span> <span class="o">=</span> <span class="n">dob</span>
+    <span class="k">return</span> <span class="n">user</span><span class="o">.</span><span class="n">dob</span>
 
 <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Albert"</span> <span class="p">,</span> <span class="n">dob</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">classOf</span> <span class="o">=</span> <span class="mi">2041</span><span class="p">)</span>
 
 <span class="n">test_user</span><span class="p">(</span><span class="n">u1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">change_dob</span><span class="p">(</span><span class="s2">"Albert"</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">change_dob</span><span class="p">(</span><span class="n">u1</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
 <span class="n">test_user</span><span class="p">(</span><span class="n">u1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">u1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -451,9 +470,10 @@ Test 4, make a dictionary
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Albert 2023-01-01 0 2041
-2020-01-01
-Albert 2020-01-01 3 2041
+<pre>Albert 01-01-2023 0 2041
+01-01-2020
+Albert 01-01-2020 3 2041
+{"name": "Albert", "dob": "01-01-2020", "age": 3, "classOf": 2041}
 </pre>
 </div>
 </div>
@@ -492,12 +512,27 @@ Albert 2020-01-01 3 2041
     <span class="k">def</span> <span class="nf">pwHash</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pwHash</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_pwHash</span> <span class="o">=</span> <span class="n">pwHash</span>
 
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dictionary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"username"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">uname</span><span class="p">,</span>
+            <span class="s2">"password hash"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">pwHash</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nb">dict</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'User(username=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_uname</span><span class="si">}</span><span class="s1">, password hash=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_pwHash</span><span class="si">}</span><span class="s1">)'</span>
+
 <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">uname</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">pwHash</span><span class="p">)</span>
 
 <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">uname</span><span class="o">=</span><span class="s2">"Albert"</span> <span class="p">,</span> <span class="n">pwHash</span> <span class="o">=</span> <span class="s2">"sha512$b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86"</span><span class="p">)</span>
 
 <span class="n">test</span><span class="p">(</span><span class="n">u1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">u1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -511,6 +546,7 @@ Albert 2020-01-01 3 2041
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Albert sha512$b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86
+{"username": "Albert", "password hash": "sha512$b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86"}
 </pre>
 </div>
 </div>
