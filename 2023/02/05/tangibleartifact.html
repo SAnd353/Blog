@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Tangible Artifact Blog" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Blogging about my tangible artifact for 2/6" />
-<meta property="og:description" content="Blogging about my tangible artifact for 2/6" />
+<meta name="description" content="Blogging about my tangible artifact (with code snippets)" />
+<meta property="og:description" content="Blogging about my tangible artifact (with code snippets)" />
 <link rel="canonical" href="https://sand353.github.io/Blog/2023/02/05/tangibleartifact.html" />
 <meta property="og:url" content="https://sand353.github.io/Blog/2023/02/05/tangibleartifact.html" />
 <meta property="og:site_name" content="SAnd353’s Fastpages Blog" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Tangible Artifact Blog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-05T00:00:00-06:00","datePublished":"2023-02-05T00:00:00-06:00","description":"Blogging about my tangible artifact for 2/6","headline":"Tangible Artifact Blog","mainEntityOfPage":{"@type":"WebPage","@id":"https://sand353.github.io/Blog/2023/02/05/tangibleartifact.html"},"url":"https://sand353.github.io/Blog/2023/02/05/tangibleartifact.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-05T00:00:00-06:00","datePublished":"2023-02-05T00:00:00-06:00","description":"Blogging about my tangible artifact (with code snippets)","headline":"Tangible Artifact Blog","mainEntityOfPage":{"@type":"WebPage","@id":"https://sand353.github.io/Blog/2023/02/05/tangibleartifact.html"},"url":"https://sand353.github.io/Blog/2023/02/05/tangibleartifact.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sand353.github.io/Blog/feed.xml" title="SAnd353's Fastpages Blog" /><link rel="shortcut icon" type="image/x-icon" href="/Blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Tangible Artifact Blog</h1><p class="page-description">Blogging about my tangible artifact for 2/6</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-05T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Tangible Artifact Blog</h1><p class="page-description">Blogging about my tangible artifact (with code snippets)</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-05T00:00:00-06:00" itemprop="datePublished">
         Feb 5, 2023
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -85,28 +85,160 @@ window.onload = wrap_img;
 
     
 
-    </header>
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/SAnd353/Blog/tree/master/_notebooks/2023-02-05-tangibleartifact.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/Blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/SAnd353/Blog/master?filepath=_notebooks%2F2023-02-05-tangibleartifact.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/SAnd353/Blog/blob/master/_notebooks/2023-02-05-tangibleartifact.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FSAnd353%2FBlog%2Fblob%2Fmaster%2F_notebooks%2F2023-02-05-tangibleartifact.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/Blog/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="my-tangible-artifact-is-a-live-generated-calendar-for-the-current-month-with-clickable-days">My tangible artifact is a live-generated calendar (for the current month) with clickable days.</h1>
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#My-tangible-artifact-is-a-live-generated-calendar-(for-the-current-month)-with-clickable-days.">My tangible artifact is a live-generated calendar (for the current month) with clickable days. </a></li>
+<li class="toc-entry toc-h1"><a href="#Things-to-work-on-and-improve">Things to work on and improve </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-02-05-tangibleartifact.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="My-tangible-artifact-is-a-live-generated-calendar-(for-the-current-month)-with-clickable-days.">
+<a class="anchor" href="#My-tangible-artifact-is-a-live-generated-calendar-(for-the-current-month)-with-clickable-days." aria-hidden="true"><span class="octicon octicon-link"></span></a>My tangible artifact is a live-generated calendar (for the current month) with clickable days.<a class="anchor-link" href="#My-tangible-artifact-is-a-live-generated-calendar-(for-the-current-month)-with-clickable-days."> </a>
+</h1>
 <ul>
-  <li>this is largely done with Javascript.</li>
-  <li>It makes use of Javascript’s built in Date() object functionality</li>
-  <li>The JS creates “daySquare” elements based upon the current month and current day of the week</li>
-  <li>In the function that creates “daySquare” elements, the number of days in the first week of the month being generated that belong to the previous month is accounted for
-    <ul>
-      <li>This is so that the function can create an appropriate number of “padding days”</li>
-    </ul>
-  </li>
-  <li>Furthermore, whenever a daySquare is created, addeventlistener is used to make them clickable buttons</li>
+<li>this is largely done with Javascript.</li>
+<li>It makes use of Javascript's built in Date() object functionality</li>
 </ul>
 
-<h1 id="things-to-work-on-and-improve">Things to work on and improve</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">const</span> <span class="n">date</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">();</span>
+
+<span class="n">const</span> <span class="n">day</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">getDate</span><span class="p">();</span>
+<span class="n">const</span> <span class="n">month</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">getMonth</span><span class="p">();</span>
+<span class="n">const</span> <span class="n">year</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">getFullYear</span><span class="p">();</span>
+<span class="n">const</span> <span class="n">daysInMonth</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">getDate</span><span class="p">();</span>
+<span class="n">const</span> <span class="n">firstDayOfMonth</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-  <li>Instead of making the days, when clicked, immediately ask for a new workout, make them open the currently saved workouts to the side and have buttons for adding, removing, and changing workouts there (Making things more intelligent)</li>
-  <li>Saving and retrieving data to the backend (POST and GET requests with fetch())</li>
-  <li>Making it more space-efficient (currently does NOT work well with site-theme (Modernist))</li>
+<li>The JS creates "daySquare" elements based upon the current month and current day of the week</li>
+<li>In the function that creates "daySquare" elements, the number of days in the first week of the month being generated that belong to the previous month is accounted for<ul>
+<li>This is so that the function can create an appropriate number of "padding days"</li>
 </ul>
+</li>
+<li>Furthermore, whenever a daySquare is created, addeventlistener is used to make them clickable buttons</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">const</span> <span class="n">weekdays</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Sunday'</span><span class="p">,</span> <span class="s1">'Monday'</span><span class="p">,</span> <span class="s1">'Tuesday'</span><span class="p">,</span> <span class="s1">'Wednesday'</span><span class="p">,</span> <span class="s1">'Thursday'</span><span class="p">,</span> <span class="s1">'Friday'</span><span class="p">,</span> <span class="s1">'Saturday'</span><span class="p">];</span>
+
+<span class="n">const</span> <span class="n">dateString</span> <span class="o">=</span> <span class="n">firstDayOfMonth</span><span class="o">.</span><span class="n">toLocaleDateString</span><span class="p">(</span><span class="s1">'en-US'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">weekday</span><span class="p">:</span> <span class="s1">'long'</span><span class="p">,</span>
+    <span class="n">year</span><span class="p">:</span> <span class="s1">'numeric'</span><span class="p">,</span>
+    <span class="n">month</span><span class="p">:</span> <span class="s1">'numeric'</span><span class="p">,</span>
+    <span class="n">day</span><span class="p">:</span> <span class="s1">'numeric'</span><span class="p">,</span> 
+
+<span class="p">});</span>
+
+<span class="n">const</span> <span class="n">prevDays</span> <span class="o">=</span> <span class="n">weekdays</span><span class="o">.</span><span class="n">indexOf</span><span class="p">(</span><span class="n">dateString</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">', '</span><span class="p">)[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="k">for</span><span class="p">(</span><span class="n">let</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">prevDays</span> <span class="o">+</span> <span class="n">daysInMonth</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">const</span> <span class="n">daySquare</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span>
+    <span class="n">daySquare</span><span class="o">.</span><span class="n">classList</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">'day'</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="n">prevDays</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">daySquare</span><span class="o">.</span><span class="n">innerText</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">prevDays</span><span class="p">;</span>
+        <span class="n">daySquare</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="n">openPopup</span><span class="p">(</span><span class="n">daySquare</span><span class="o">.</span><span class="n">innerHTML</span><span class="p">));</span>
+        <span class="n">savedEvents</span><span class="p">[</span><span class="n">daySquare</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">+</span> <span class="s1">' '</span> <span class="o">+</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"calendarHeader"</span><span class="p">)</span><span class="o">.</span><span class="n">innerText</span> <span class="o">+</span> <span class="s1">' workout(s)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">Array</span><span class="p">();</span>
+    <span class="p">}</span> 
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="n">daySquare</span><span class="o">.</span><span class="n">classList</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">'padding'</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="n">calendar</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">daySquare</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Things-to-work-on-and-improve">
+<a class="anchor" href="#Things-to-work-on-and-improve" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things to work on and improve<a class="anchor-link" href="#Things-to-work-on-and-improve"> </a>
+</h1>
+<ul>
+<li>Instead of making the days, when clicked, immediately ask for a new workout, make them open the currently saved workouts to the side and have buttons for adding, removing, and changing workouts there (Making things more intelligent)</li>
+<li>Saving and retrieving data to the backend (POST and GET requests with fetch())</li>
+<li>Making it more space-efficient (currently does NOT work well with site-theme (Modernist))</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
 
   </div><a class="u-url" href="/Blog/2023/02/05/tangibleartifact.html" hidden></a>
 </article>
