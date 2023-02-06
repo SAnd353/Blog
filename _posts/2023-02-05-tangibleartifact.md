@@ -16,3 +16,4 @@ layout: post
 # Things to work on and improve
 - Instead of making the days, when clicked, immediately ask for a new workout, make them open the currently saved workouts to the side and have buttons for adding, removing, and changing workouts there (Making things more intelligent)
 - Saving and retrieving data to the backend (POST and GET requests with fetch())
+- Making it more space-efficient (currently does NOT work well with site-theme (Modernist))
