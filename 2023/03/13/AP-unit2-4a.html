@@ -886,7 +886,7 @@ Deleted
 
     <span class="c1"># CRUD upid: upids user name, password, phone</span>
     <span class="c1"># returns self</span>
-    <span class="k">def</span> <span class="nf">upid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="sd">"""only upids values with length"""</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="nb">id</span>
@@ -938,34 +938,6 @@ Deleted
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 25</span> in <span class="ansi-cyan-fg">&lt;cell line: 18&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X33sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span>                 db.session.remove()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X33sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span>                 print(f"Records exist, duplicate username, or error: {row.date}")
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X33sdnNjb2RlLXJlbW90ZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span> initNames()
-
-<span class="ansi-green-intense-fg ansi-bold">/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 25</span> in <span class="ansi-cyan-fg">initNames</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X33sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> db.create_all()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X33sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> r1 = name(id= 1, name="Yeung")
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X33sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> r2 = name(name="Mortensen")
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X33sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> rows = [r1, r2]
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/steven/vscode/Blog/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X33sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> """Builds sample user/note(s) data"""
-
-<span class="ansi-red-fg">TypeError</span>: __init__() missing 1 required positional argument: 'id'</pre>
-</div>
-</div>
-
 </div>
 </div>
 
