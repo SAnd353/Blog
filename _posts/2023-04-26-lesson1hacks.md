@@ -18,6 +18,7 @@ toc: true
 - Q2: D
 - Q3: C
 # DuckDNS and AWS HACKS
+
 | DuckDNS Pros | DuckDNS Cons |
 | ------------ | ------------ |
 | Free | limited to duckdns.org domains |
