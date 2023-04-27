@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -630,26 +630,27 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
     <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter: (C)reate (R)ead (U)pdate or (D)elete or (S)chema"</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">operation</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'c'</span><span class="p">:</span>
-            <span class="n">create</span><span class="p">()</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"creating"</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'r'</span><span class="p">:</span>
-            <span class="n">read</span><span class="p">()</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"reading"</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'u'</span><span class="p">:</span>
-            <span class="n">update</span><span class="p">()</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"updating"</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'d'</span><span class="p">:</span>
-            <span class="n">delete</span><span class="p">()</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"deleting"</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'s'</span><span class="p">:</span>
-            <span class="n">schema</span><span class="p">()</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"schema"</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
-            <span class="k">return</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter c, r, u, or d"</span><span class="p">)</span> 
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
+        <span class="k">return</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">operation</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'c'</span><span class="p">:</span>
+                <span class="n">create</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"creating"</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'r'</span><span class="p">:</span>
+                <span class="n">read</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"reading"</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'u'</span><span class="p">:</span>
+                <span class="n">update</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"updating"</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'d'</span><span class="p">:</span>
+                <span class="n">delete</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"deleting"</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'s'</span><span class="p">:</span>
+                <span class="n">schema</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"schema"</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter c, r, u, or d"</span><span class="p">)</span> 
     <span class="n">menu</span><span class="p">()</span> <span class="c1"># recursion, repeat menu</span>
 
 <span class="n">menu</span><span class="p">()</span>        
@@ -669,14 +670,30 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Error while executing the INSERT: no such table: users
-creating
+<pre>('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
 ('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
 reading
-Error while executing the UPDATE: no such table: users
-updating
-Error while executing the DELETE: no such table: users
-deleting
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
+('25 February 2023', b'\x80\x05\x95&amp;\x00\x00\x00\x00\x00\x00\x00]\x94\x8c\x1fThis is a test of the new table\x94a.')
+reading
 </pre>
 </div>
 </div>
@@ -730,6 +747,9 @@ deleting
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="/Blog/images/copied_from_nb/images/2.4b_debugExample.png" alt="Debugging Example"></p>
+<ul>
+<li>in this example, the table's contents are being retrieved. The function returns a simple dictionary, but the actual table has many hidden variables.</li>
+</ul>
 
 </div>
 </div>
