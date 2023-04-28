@@ -15,7 +15,7 @@ toc: true
 </body>
 <script>
     bigbox = document.getElementById("bigbox");
-    boxlist = [-1]
+    boxlist = []
     score = 0;
     for (let i=1; i<26; i++) {
         const square = document.createElement("div");
@@ -31,7 +31,7 @@ toc: true
         timer = 0;
         if (!stopwatch) {
             stopwatch = setInterval(clock, 1000)
-            light(-1)
+            light(String(Math.floor(Math.random() * 25)))
         }
     }
 
@@ -47,11 +47,10 @@ toc: true
     }
 
     function light(id) {
-        console.log(boxlist)
-        templist = boxlist;
-        templist.splice(templist.indexOf(id), 1);
+        templist = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+        templist.splice(parseInt(id) -1, 1);
         console.log(templist)
-        newlitid = templist[String(Math.floor(Math.random() * 24) + 1)]
+        newlitid = templist[String(Math.floor(Math.random() * 24))]
         console.log(newlitid)
         newlit = document.getElementById(newlitid);
         newlit.style.backgroundColor = "red";
