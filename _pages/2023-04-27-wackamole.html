@@ -92,8 +92,8 @@ window.onload = wrap_img;
 <link rel="stylesheet" href="../assets/css/wackamole.css">
 
     <button id="start" onclick="start()">Click to start</button>
-    <p id="time">Time Left: </p>
-    <p id="score">Score: </p>
+    <p id="time">Time Left: 30</p>
+    <p id="score">Score: 0</p>
     <div id="bigbox">
 
     </div>
@@ -112,9 +112,13 @@ window.onload = wrap_img;
     }
 
     let stopwatch;
+    timer = 30;
     function start() {
-        timer = 0;
-        if (!stopwatch) {
+        if (timer==30) {
+            timer = 0;
+            console.log("starting")
+            document.getElementById("time").innerText = "Time Left: 30";
+            document.getElementById("score").innerText = "Score: 0";
             stopwatch = setInterval(clock, 1000)
             light(String(Math.floor(Math.random() * 25)))
         }
@@ -132,6 +136,7 @@ window.onload = wrap_img;
     }
 
     function light(id) {
+        console.log("lighting")
         templist = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
         templist.splice(parseInt(id) -1, 1);
         console.log(templist)
