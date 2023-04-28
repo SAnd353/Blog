@@ -1,6 +1,6 @@
 ---
 title: "Wack-a-mole style aim trainer"
-description: "Game for lesson 2 hacks"
+description: "Objective is to click as many red squares in 30 seconds"
 layout: post
 toc: true
 ---
@@ -31,8 +31,8 @@ toc: true
         timer = 0;
         if (!stopwatch) {
             stopwatch = setInterval(clock, 1000)
+            light(-1)
         }
-        light(-1)
     }
 
     function clock() {
@@ -51,7 +51,7 @@ toc: true
         templist = boxlist;
         templist.splice(templist.indexOf(id), 1);
         console.log(templist)
-        newlitid = String(Math.floor(Math.random() * 24) + 1)
+        newlitid = templist[String(Math.floor(Math.random() * 24) + 1)]
         console.log(newlitid)
         newlit = document.getElementById(newlitid);
         newlit.style.backgroundColor = "red";
