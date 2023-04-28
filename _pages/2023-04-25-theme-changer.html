@@ -4,21 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Tangible Artifact Blog | SAnd353’s Fastpages Blog</title>
+<title>Theme Changer | SAnd353’s Fastpages Blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Tangible Artifact Blog" />
+<meta property="og:title" content="Theme Changer" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Blogging about my tangible artifact for 2/6" />
-<meta property="og:description" content="Blogging about my tangible artifact for 2/6" />
-<link rel="canonical" href="https://sand353.github.io/Blog/2023/02/05/tangibleartifactnotebook.html" />
-<meta property="og:url" content="https://sand353.github.io/Blog/2023/02/05/tangibleartifactnotebook.html" />
+<meta name="description" content="Sand353’s Blog - built using Fastpages" />
+<meta property="og:description" content="Sand353’s Blog - built using Fastpages" />
+<link rel="canonical" href="https://sand353.github.io/Blog/_pages/2023-04-25-theme-changer.html" />
+<meta property="og:url" content="https://sand353.github.io/Blog/_pages/2023-04-25-theme-changer.html" />
 <meta property="og:site_name" content="SAnd353’s Fastpages Blog" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-02-05T00:00:00-06:00" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Tangible Artifact Blog" />
+<meta property="twitter:title" content="Theme Changer" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-05T00:00:00-06:00","datePublished":"2023-02-05T00:00:00-06:00","description":"Blogging about my tangible artifact for 2/6","headline":"Tangible Artifact Blog","mainEntityOfPage":{"@type":"WebPage","@id":"https://sand353.github.io/Blog/2023/02/05/tangibleartifactnotebook.html"},"url":"https://sand353.github.io/Blog/2023/02/05/tangibleartifactnotebook.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Sand353’s Blog - built using Fastpages","headline":"Theme Changer","url":"https://sand353.github.io/Blog/_pages/2023-04-25-theme-changer.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sand353.github.io/Blog/feed.xml" title="SAnd353's Fastpages Blog" /><link rel="shortcut icon" type="image/x-icon" href="/Blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -70,46 +69,35 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 id="theme-changer">Theme Changer</h1>
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Tangible Artifact Blog</h1><p class="page-description">Blogging about my tangible artifact for 2/6</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-05T00:00:00-06:00" itemprop="datePublished">
-        Feb 5, 2023
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      1 min read
-    
-</span></p>
-
-    
-
-    </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="my-tangible-artifact-is-a-live-generated-calendar-for-the-current-month-with-clickable-days">My tangible artifact is a live-generated calendar (for the current month) with clickable days.</h1>
-<ul>
-  <li>this is largely done with Javascript.</li>
-  <li>It makes use of Javascript’s built in Date() object functionality</li>
-  <li>The JS creates “daySquare” elements based upon the current month and current day of the week</li>
-  <li>In the function that creates “daySquare” elements, the number of days in the first week of the month being generated that belong to the previous month is accounted for
-    <ul>
-      <li>This is so that the function can create an appropriate number of “padding days”</li>
-    </ul>
-  </li>
-  <li>Furthermore, whenever a daySquare is created, addeventlistener is used to make them clickable buttons</li>
-</ul>
-
-<h1 id="things-to-work-on-and-improve">Things to work on and improve</h1>
-<ul>
-  <li>Instead of making the days, when clicked, immediately ask for a new workout, make them open the currently saved workouts to the side and have buttons for adding, removing, and changing workouts there (Making things more intelligent)</li>
-  <li>Saving and retrieving data to the backend (POST and GET requests with fetch())</li>
-  <li>Making it more space-efficient (currently does NOT work well with site-theme (Modernist))</li>
-</ul>
-
-  </div><a class="u-url" href="/Blog/2023/02/05/tangibleartifactnotebook.html" hidden></a>
-</article>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../assets/css/blackbg.css" />
+    <link rel="stylesheet" href="../assets/css/greenbg.css" id="theme-link" />
+</head>
+<body>
+    <button id="theme-toggle">Toggle Light/Dark Theme</button>
+    <input id="bgpickerentry" placeholder="Pick a background color" />
+    <button id="bgpicker" onclick="changeBG()">Change</button>
+    <script>
+        const toggleButton = document.querySelector('#theme-toggle');
+        const themeLink = document.querySelector('#theme-link');
+        toggleButton.addEventListener('click', () => {
+            if (themeLink.getAttribute('href') === '../assets/css/blackbg.css') {
+                themeLink.setAttribute('href', '../assets/css/greenbg.css');
+                document.body.style.background = '';
+            } else {
+                themeLink.setAttribute('href', '../assets/css/blackbg.css');
+                document.body.style.background = '';
+            }
+        });
+        function changeBG() {
+            console.log(document.getElementById("bgpickerentry").innerText.toLowerCase())
+            document.body.style.background = document.getElementById("bgpickerentry").value;
+        }
+    </script>
+</body>
 
       </div>
     </main><footer class="site-footer h-card">
