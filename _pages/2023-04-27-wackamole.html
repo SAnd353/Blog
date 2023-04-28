@@ -16,7 +16,7 @@ toc: true
 <script>
     bigbox = document.getElementById("bigbox");
     boxlist = []
-    score = 0;
+    let score;
     for (let i=1; i<26; i++) {
         const square = document.createElement("div");
         square.addEventListener("click", () => wack(i))
@@ -32,6 +32,7 @@ toc: true
         if (timer==30) {
             timer = 0;
             console.log("starting")
+            score = 0;
             document.getElementById("time").innerText = "Time Left: 30";
             document.getElementById("score").innerText = "Score: 0";
             stopwatch = setInterval(clock, 1000)
@@ -63,10 +64,15 @@ toc: true
 
     function wack(id) {
         if (newlitid == id) {
-            score++;
+            score = score +2;
             document.getElementById("score").innerText = "Score: " + score;
-        document.getElementById(id).style.backgroundColor = "";
-        light(id)
+            document.getElementById(id).style.backgroundColor = "";
+            light(id)
+        } else {
+            score--;
+            document.getElementById("score").innerText = "Score: " + score;
         }
+
     }
+    
 </script>
