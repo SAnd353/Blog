@@ -101,7 +101,7 @@ window.onload = wrap_img;
 <script>
     bigbox = document.getElementById("bigbox");
     boxlist = []
-    score = 0;
+    let score;
     for (let i=1; i<26; i++) {
         const square = document.createElement("div");
         square.addEventListener("click", () => wack(i))
@@ -117,6 +117,7 @@ window.onload = wrap_img;
         if (timer==30) {
             timer = 0;
             console.log("starting")
+            score = 0;
             document.getElementById("time").innerText = "Time Left: 30";
             document.getElementById("score").innerText = "Score: 0";
             stopwatch = setInterval(clock, 1000)
@@ -148,12 +149,17 @@ window.onload = wrap_img;
 
     function wack(id) {
         if (newlitid == id) {
-            score++;
+            score = score +2;
             document.getElementById("score").innerText = "Score: " + score;
-        document.getElementById(id).style.backgroundColor = "";
-        light(id)
+            document.getElementById(id).style.backgroundColor = "";
+            light(id)
+        } else {
+            score--;
+            document.getElementById("score").innerText = "Score: " + score;
         }
+
     }
+    
 </script>
 </body>
   </div><a class="u-url" href="/Blog/_pages/2023-04-27-wackamole.html" hidden></a>
