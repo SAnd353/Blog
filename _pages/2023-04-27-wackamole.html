@@ -1,0 +1,68 @@
+---
+title: "Wack-a-mole style aim trainer"
+description: "Game for lesson 2 hacks"
+layout: post
+toc: true
+---
+<head><link rel="stylesheet" href="../assets/css/wackamole.css"></head>
+<body>
+    <button id="start" onclick="start()">Click to start</button>
+    <p id="time">Time Left: </p>
+    <p id="score">Score: </p>
+    <div id="bigbox">
+
+    </div>
+</body>
+<script>
+    bigbox = document.getElementById("bigbox");
+    boxlist = [-1]
+    score = 0;
+    for (let i=1; i<26; i++) {
+        const square = document.createElement("div");
+        square.addEventListener("click", () => wack(i))
+        square.setAttribute("id", i)
+        square.classList.add("square");
+        bigbox.appendChild(square)
+        boxlist.push(i);
+    }
+
+    let stopwatch;
+    function start() {
+        timer = 0;
+        if (!stopwatch) {
+            stopwatch = setInterval(clock, 1000)
+        }
+        light(-1)
+    }
+
+    function clock() {
+        timer++;
+        console.log(timer)
+        if (timer >= 30) {
+            clearInterval(stopwatch);
+            newlit.style.backgroundColor = "";
+            newlitid = "-1"
+        }
+        document.getElementById("time").innerText = "Time Left: " + String(30-timer)
+    }
+
+    function light(id) {
+        console.log(boxlist)
+        templist = boxlist;
+        templist.splice(templist.indexOf(id), 1);
+        console.log(templist)
+        newlitid = String(Math.floor(Math.random() * 24) + 1)
+        console.log(newlitid)
+        newlit = document.getElementById(newlitid);
+        newlit.style.backgroundColor = "red";
+    }
+
+    function wack(id) {
+        if (newlitid == id) {
+            score++;
+            document.getElementById("score").innerText = "Score: " + score;
+        document.getElementById(id).style.backgroundColor = "";
+        light(id)
+        }
+    }
+</script>

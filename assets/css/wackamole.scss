@@ -1,0 +1,18 @@
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    display: inline-block;
+    margin: 5px;
+    line-height: 0;
+}
+
+#bigbox {
+    width: 300px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.lit {
+    background-color: red;
+}
